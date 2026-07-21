@@ -1,7 +1,7 @@
 {
-  "name": "ryker-multi-agent-tech-dashboard",
-  "version": "2.7.5",
-  "description": "Real-time monitoring dashboard for Ryker MultiAgent Tech — agent status, execution timeline, intervention panel",
+  "name": "ryker-multi-agent-dashboard",
+  "version": "2.8.0-nexus",
+  "description": "Real-time ELITE-NEXUS v2 monitoring dashboard for Ryker Multi-Agent Tech",
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
