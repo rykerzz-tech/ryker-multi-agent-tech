@@ -55,30 +55,46 @@ ryker-multi-agent-tech/
 graph TD
     UserRequest["🤖 USER REQUEST"] --> IntentRouter["1. Intent & Complexity Router"]
 
-    subgraph NexusCore ["ELITE-NEXUS v2 CORE ENGINE"]
+    subgraph NexusCore ["ELITE-NEXUS OS v1.0 RUNTIME ENGINE"]
         IntentRouter --> Planner["2. Autonomous Task Planner"]
         Planner --> ContextBuilder["3. Dynamic Context & Memory Engine"]
         ContextBuilder --> TaskRouter["4. Workflow Scheduler & Router"]
     end
 
-    subgraph MemoryTier ["MULTI-TIERED MEMORY"]
+    subgraph MemoryTier ["LAYERED MEMORY FABRIC"]
         WorkingMem[("Working Memory")]
+        ConvoMem[("Conversation Memory")]
         ProjectMem[("Project & Code Standards")]
+        DecMem[("Decision Memory")]
+        ArchMem[("Architecture/Coding Memory")]
         VectorMem[("Persistent Vector Memory")]
     end
 
     ContextBuilder <--> MemoryTier
 
     subgraph Agents ["SPECIALIST AGENT MATRIX"]
-        TaskRouter --> ArchAgent["Architect Agent"]
-        TaskRouter --> FEAgent["Frontend Agent"]
-        TaskRouter --> BEAgent["Backend Agent"]
-        TaskRouter --> SecAgent["Security Agent"]
-        TaskRouter --> QualityAgent["QA Agent"]
+        TaskRouter --> ArchAgent["Architect Specialist"]
+        TaskRouter --> FEAgent["Frontend Specialist"]
+        TaskRouter --> BEAgent["Backend Specialist"]
+        TaskRouter --> SecAgent["Security Specialist"]
+        TaskRouter --> QualityAgent["QA Specialist"]
+        TaskRouter --> DevOpsAgent["DevOps Specialist"]
     end
 
-    Agents --> ReflectionEngine["5. Reflection & Quality Gate"]
-    ReflectionEngine -->|Passed| FinalDeliverable["📦 ENTERPRISE DELIVERABLE"]
+    subgraph ToolRuntime ["UNIFIED TOOL RUNTIME"]
+        FS[("Filesystem Tool")]
+        Git[("Git Tool")]
+        DB[("Database Tool")]
+        API[("API Tool")]
+        MCP[("MCP Tool")]
+    end
+
+    Agents --> ToolRuntime
+    ToolRuntime --> ReflectionEngine["5. Review & Reflection Engine"]
+    ReflectionEngine --> QualityGate{"6. Quality Gate & Risk Analysis"}
+    QualityGate -->|Passed| FinalDeliverable["📦 ENTERPRISE ARTIFACT"]
+    QualityGate -->|Failed| RetryEngine["7. Retry & Recovery Loop"]
+    RetryEngine --> Planner
 ```
 
 ---

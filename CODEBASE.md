@@ -10,12 +10,13 @@ Ryker Multi-Agent Tech is built as a modular Node.js engine designed for autonom
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────┐
-│                        Ryker CLI & API Server                          │
+│                     Elite-Nexus OS CLI & API Server                    │
 ├───────────────────────────────────┬────────────────────────────────────┤
-│         Core Runtime              │            API & MCP               │
-│  - Agent Loader (agent-loader.js) │  - REST Server (lib/api/server.js) │
-│  - Failover Chain (failover.js)   │  - WS Engine (lib/api/ws.js)       │
-│  - Guardrails (guardrails.js)     │  - MCP Tools (lib/mcp/server.js)   │
+│         OS Core Engine            │            API & MCP               │
+│  - Analyzers & Planners           │  - REST Server (lib/api/server.js) │
+│  - Layered Memory Fabric          │  - WS Engine (lib/api/ws.js)       │
+│  - Tool Abstraction Runtime       │  - MCP Tools (lib/mcp/server.js)   │
+│  - Review & Reflection Loop       │                                    │
 └───────────────────────────────────┴────────────────────────────────────┘
 ```
 
