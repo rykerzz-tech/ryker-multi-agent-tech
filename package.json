@@ -1,0 +1,79 @@
+{
+  "name": "ryker-multi-agent-tech",
+  "version": "1.0.0",
+  "description": "Ryker Multi-Agent Tech v1.0.0 — Autonomous AI Agent Operating System & Multi-Agent Orchestration Framework",
+  "bin": {
+    "ryker-multi-agent-tech": "./bin/cli.js",
+    "ryker-multi-agent": "./bin/cli.js"
+  },
+  "scripts": {
+    "checklist": "python3 .windsurf/scripts/checklist.py .",
+    "checklist:url": "python3 .windsurf/scripts/checklist.py . --url http://localhost:3000",
+    "security": "python3 .windsurf/skills/vulnerability-scanner/scripts/security_scan.py .",
+    "lint": "node --check lib/core/*.js lib/api/*.js lib/commands/*.js lib/mcp/*.js lib/publish/*.js bin/cli.js bin/server.js",
+    "test": "node lib/test/unit/core.test.js && node lib/test/unit/production.test.js && node lib/test/unit/cursor-generator.test.js && node lib/test/unit/v2-7-9.test.js && node lib/test/integration/flow.test.js",
+    "test:unit": "node lib/test/unit/core.test.js && node lib/test/unit/production.test.js && node lib/test/unit/cursor-generator.test.js && node lib/test/unit/v2-7-9.test.js",
+    "test:integration": "node lib/test/integration/flow.test.js",
+    "ux": "python3 .windsurf/skills/frontend-design/scripts/ux_audit.py .",
+    "seo": "python3 .windsurf/skills/seo-fundamentals/scripts/seo_checker.py .",
+    "schema": "python3 .windsurf/skills/database-design/scripts/schema_validator.py .",
+    "start": "node bin/server.js",
+    "docker:build": "docker build -t ryker-multi-agent-tech .",
+    "docker:run": "docker run -p 3000:3000 -e LLM_PROVIDER=mock ryker-multi-agent-tech",
+    "postinstall": "node ./bin/postinstall.js"
+  },
+  "dependencies": {
+    "@isomorphic-git/lightning-fs": "^4.6.3",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "glob": "^10.3.16",
+    "inquirer": "^9.2.23",
+    "isomorphic-git": "^1.38.9",
+    "ora": "^5.4.1",
+    "tweetsodium": "^0.0.4",
+    "ws": "^8.20.0",
+    "yaml": "^2.4.1",
+    "zod": "^4.4.3"
+  },
+  "keywords": [
+    "ryker-multi-agent-tech",
+    "ai-agent",
+    "agent-framework",
+    "cli",
+    "agent-forge",
+    "multi-agent",
+    "orchestration",
+    "automation",
+    "developer-tools",
+    "agent-platform",
+    "agent-testing",
+    "plugin-system"
+  ],
+  "author": "rykerzz-tech <https://github.com/rykerzz-tech>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rykerzz-tech/ryker-multi-agent-tech.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rykerzz-tech/ryker-multi-agent-tech/issues"
+  },
+  "homepage": "https://github.com/rykerzz-tech/ryker-multi-agent-tech#readme",
+  "files": [
+    ".windsurf/",
+    "bin/",
+    "lib/",
+    "templates/",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "CODEBASE.md",
+    ".windsurfrules"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+services:
+  ryker-api:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - QUEUE_CONCURRENCY=5
+      - QUEUE_MAX=100
+      - RYKER_ENABLE_MOCK=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "const h=require('http');const r=h.request('http://localhost:3000/health',res=>process.exit(res.statusCode<500?0:1));r.on('error',()=>process.exit(1));r.setTimeout(3000,()=>{r.destroy();process.exit(1)});r.end()"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  ryker-dashboard:
+    build:
+      context: ./ryker-multi-agent-tech-dashboard
+      args:
+        RYKER_API_URL: http://ryker-api:3000
+        NEXT_PUBLIC_WS_URL: ws://localhost:3000/ws
+        NEXT_PUBLIC_API_KEY: ${RYKER_API_KEY:-}
+    ports:
+      - "3001:3001"
+    env_file:
+      - .env
+    environment:
+      - RYKER_API_URL=http://ryker-api:3000
+    restart: unless-stopped
+    depends_on:
+      ryker-api:
+        condition: service_healthy
