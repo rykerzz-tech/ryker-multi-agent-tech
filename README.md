@@ -12,8 +12,7 @@
 <br>
 
 ```bash
-# Run latest v1.0.0 directly from GitHub
-npx github:rykerzz-tech/ryker-multi-agent-tech init
+npx ryker-multi-agent-tech init
 ```
 
 </div>
@@ -82,10 +81,7 @@ graph TD
 ## 🚀 Quick Start & CLI Reference
 
 ```bash
-# Direct GitHub execution (Instant fetch of latest commit v1.0.0)
-npx github:rykerzz-tech/ryker-multi-agent-tech init
-
-# Standard package execution
+# Initialize interactive setup
 npx ryker-multi-agent-tech init
 
 # Start interactive multi-agent chat session
