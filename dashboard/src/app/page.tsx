@@ -9,7 +9,7 @@ import { ResetDialog } from "@/components/reset-dialog";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Zap } from "lucide-react";
 
-const APP_VERSION = process.env.NEXT_PUBLIC_APP_VERSION || "2.8.0 (ELITE-NEXUS v2)";
+const APP_VERSION = process.env.NEXT_PUBLIC_APP_VERSION || "1.0.0";
 
 function DashboardContent() {
   const { errors, clearErrors } = useWs();

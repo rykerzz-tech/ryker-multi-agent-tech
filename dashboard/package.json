@@ -1,6 +1,6 @@
 {
   "name": "ryker-multi-agent-dashboard",
-  "version": "2.8.0-nexus",
+  "version": "1.0.0",
   "description": "Real-time ELITE-NEXUS v2 monitoring dashboard for Ryker Multi-Agent Tech",
   "license": "Apache-2.0",
   "private": true,
