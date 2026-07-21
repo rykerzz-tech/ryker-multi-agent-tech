@@ -250,8 +250,11 @@ export function DashboardHeader({ version, onReset, showToast, connInfo, onConnI
               <Zap className="h-5 w-5 text-blue-600 dark:text-blue-400" />
               <div className="absolute inset-0 blur-md bg-blue-600/40 dark:bg-blue-400/40" />
             </div>
-            <h1 className="text-sm sm:text-base font-bold tracking-tight gradient-text group-hover:opacity-80 transition-opacity">
-              Aiyu MultiAgent
+            <h1 className="text-sm sm:text-base font-bold tracking-tight gradient-text group-hover:opacity-80 transition-opacity flex items-center gap-2">
+              <span>Ryker Multi-Agent</span>
+              <span className="text-[10px] bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-2 py-0.5 rounded-full shadow-sm">
+                ELITE-NEXUS v2
+              </span>
             </h1>
             <span className="hidden sm:inline-flex text-[10px] text-gray-500 dark:text-zinc-600 border border-gray-300 dark:border-zinc-800 rounded-full px-2 py-0.5">
               v{version}
@@ -261,33 +264,33 @@ export function DashboardHeader({ version, onReset, showToast, connInfo, onConnI
             />
           </button>
           {showAppInfo && (
-            <div className="absolute left-0 top-full mt-2 w-72 dropdown-panel overflow-hidden animate-slide-in z-50">
+            <div className="absolute left-0 top-full mt-2 w-80 dropdown-panel overflow-hidden animate-slide-in z-50">
               <div className="p-3 border-b border-gray-200 dark:border-zinc-700">
                 <div className="flex items-center gap-2">
                   <Zap className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                  <span className="text-sm font-bold gradient-text">Aiyu MultiAgent</span>
+                  <span className="text-sm font-bold gradient-text">Ryker Multi-Agent</span>
                   <span className="text-[10px] text-gray-500 dark:text-zinc-600 border border-gray-300 dark:border-zinc-800 rounded-full px-2 py-0.5">
                     v{version}
                   </span>
                 </div>
                 <p className="text-[11px] text-gray-500 dark:text-zinc-500 mt-1">
-                  Open-source AI Agent Platform — multi-provider, multi-agent orchestration
+                  Enterprise Autonomous AI Operating System — ELITE-NEXUS v2 Architecture
                 </p>
               </div>
               <div className="p-3 space-y-2 text-[11px]">
-                <InfoRow label="npm" value="aiyu-multi-agent" />
-                <InfoRow label="CLI" value={'aiyu-multi-agent run "<task>"'} />
+                <InfoRow label="Repository" value="rykerzz-tech/ryker-multi-agent-tech" />
+                <InfoRow label="CLI" value={'ryker-multi-agent run "<task>"'} />
                 <InfoRow label="Node" value={connDisplayValues?.nodeVersion || "—"} />
                 <InfoRow label="Platform" value={connInfo ? (connInfo as Record<string, string>).platform : "—"} />
-                {/* PID intentionally hidden — info disclosure risk */}
+                <InfoRow label="Last Updated" value={new Date().toLocaleTimeString("th-TH", { hour: "2-digit", minute: "2-digit", second: "2-digit" })} />
                 <div className="pt-2 mt-2 border-t border-gray-200 dark:border-zinc-700 space-y-1.5">
                   <a
-                    href="https://github.com/teeprakorn1/aiyu-multi-agent"
+                    href="https://github.com/rykerzz-tech/ryker-multi-agent-tech"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
+                    className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-semibold"
                   >
-                    <span>GitHub Repository</span>
+                    <span>GitHub: rykerzz-tech/ryker-multi-agent-tech</span>
                     <span className="text-[9px] opacity-60">↗</span>
                   </a>
                   <a
@@ -383,6 +386,10 @@ export function DashboardHeader({ version, onReset, showToast, connInfo, onConnI
             <span className="hidden sm:inline">Reset</span>
           </button>
           <ThemeToggle />
+          <div className="hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-50/50 dark:bg-blue-950/30 text-[10px] font-mono text-blue-600 dark:text-blue-400">
+            <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
+            <span>อัปเดตล่าสุด: {new Date().toLocaleTimeString("th-TH", { hour: "2-digit", minute: "2-digit" })}</span>
+          </div>
           <div ref={connRef} className="relative">
             <button
               type="button"
