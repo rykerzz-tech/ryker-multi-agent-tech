@@ -12,7 +12,7 @@ skills: clean-code, frontend-design, tailwind-patterns, web-design-guidelines, l
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `sveltekit-developer`** | Skills: `clean-code, frontend-design, tailwind-patterns +2 more` | Rules: `GEMINI, database-rules, deployment-rules, documentation-rules, performance-rules` | Sub-agents: `No`
+🤖 Active Agent: sveltekit-developer | Skills: clean-code, frontend-design, tailwind-patterns | Rules: GEMINI.md, database-rules, deployment-rules, documentation-rules, performance-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

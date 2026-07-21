@@ -11,7 +11,7 @@ skills: clean-code, frontend-design, web-design-guidelines, tailwind-patterns
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `uiux-designer`** | Skills: `clean-code, frontend-design, web-design-guidelines, tailwind-patterns` | Rules: `GEMINI, code-quality-rules` | Sub-agents: `No`
+🤖 Active Agent: uiux-designer | Skills: clean-code, frontend-design, web-design-guidelines, tailwind-patterns | Rules: GEMINI.md, code-quality-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

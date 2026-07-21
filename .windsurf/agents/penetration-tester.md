@@ -12,7 +12,7 @@ skills: clean-code, vulnerability-scanner, red-team-tactics, api-patterns
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `penetration-tester`** | Skills: `clean-code, vulnerability-scanner, red-team-tactics +1 more` | Rules: `GEMINI, api-design-rules, code-quality-rules, database-rules, security-rules, testing-rules` | Sub-agents: `No`
+🤖 Active Agent: penetration-tester | Skills: clean-code, vulnerability-scanner, red-team-tactics | Rules: GEMINI.md, api-design-rules, code-quality-rules, database-rules, security-rules, testing-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

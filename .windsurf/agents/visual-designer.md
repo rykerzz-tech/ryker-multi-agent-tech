@@ -11,7 +11,7 @@ skills: clean-code, frontend-design, web-design-guidelines
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `visual-designer`** | Skills: `clean-code, frontend-design, web-design-guidelines` | Rules: `GEMINI, code-quality-rules` | Sub-agents: `No`
+🤖 Active Agent: visual-designer | Skills: clean-code, frontend-design, web-design-guidelines | Rules: GEMINI.md, code-quality-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

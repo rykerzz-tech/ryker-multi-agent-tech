@@ -12,7 +12,7 @@ skills: clean-code, mobile-design
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `mobile-developer`** | Skills: `clean-code, mobile-design` | Rules: `GEMINI, database-rules, deployment-rules` | Sub-agents: `No`
+🤖 Active Agent: mobile-developer | Skills: clean-code, mobile-design | Rules: GEMINI.md, database-rules, deployment-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

@@ -12,7 +12,7 @@ skills: clean-code, i18n-localization, frontend-design
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `i18n-specialist`** | Skills: `clean-code, i18n-localization, frontend-design` | Rules: `GEMINI, code-quality-rules, database-rules, deployment-rules` | Sub-agents: `No`
+🤖 Active Agent: i18n-specialist | Skills: clean-code, i18n-localization, frontend-design | Rules: GEMINI.md, code-quality-rules, database-rules, deployment-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

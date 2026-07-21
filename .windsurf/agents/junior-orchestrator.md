@@ -12,7 +12,7 @@ skills: clean-code, plan-writing, behavioral-modes
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `junior-orchestrator`** | Skills: `clean-code, plan-writing, behavioral-modes` | Rules: `GEMINI, code-quality-rules, testing-rules` | Sub-agents: `Yes`
+🤖 Active Agent: junior-orchestrator | Skills: clean-code, plan-writing, behavioral-modes | Rules: GEMINI.md, code-quality-rules, testing-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

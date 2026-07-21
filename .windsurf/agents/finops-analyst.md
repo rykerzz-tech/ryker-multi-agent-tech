@@ -12,7 +12,7 @@ skills: clean-code, architecture, server-management
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `finops-analyst`** | Skills: `clean-code, architecture, server-management` | Rules: `GEMINI, deployment-rules, performance-rules` | Sub-agents: `No`
+🤖 Active Agent: finops-analyst | Skills: clean-code, architecture, server-management | Rules: GEMINI.md, deployment-rules, performance-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

@@ -16,7 +16,7 @@ alwaysApply: false
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `package-finder`** | Skills: `clean-code, vulnerability-scanner, architecture +2 more` | Rules: `GEMINI, deployment-rules, security-rules` | Sub-agents: `No`
+🤖 Active Agent: package-finder | Skills: clean-code, vulnerability-scanner, architecture | Rules: GEMINI.md, deployment-rules, security-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

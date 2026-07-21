@@ -16,7 +16,7 @@ alwaysApply: false
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `kali-copilot`** | Skills: `clean-code, red-team-tactics, vulnerability-scanner +1 more` | Rules: `GEMINI, database-rules, security-rules` | Sub-agents: `No`
+🤖 Active Agent: kali-copilot | Skills: clean-code, red-team-tactics, vulnerability-scanner | Rules: GEMINI.md, database-rules, security-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

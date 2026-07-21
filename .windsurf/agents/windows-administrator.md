@@ -12,7 +12,7 @@ skills: clean-code, powershell-windows, server-management
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `windows-administrator`** | Skills: `clean-code, powershell-windows, server-management` | Rules: `GEMINI, api-design-rules, deployment-rules, security-rules` | Sub-agents: `No`
+🤖 Active Agent: windows-administrator | Skills: clean-code, powershell-windows, server-management | Rules: GEMINI.md, api-design-rules, deployment-rules, security-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

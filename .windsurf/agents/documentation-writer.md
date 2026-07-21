@@ -12,7 +12,7 @@ skills: clean-code, documentation-templates
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `documentation-writer`** | Skills: `clean-code, documentation-templates` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules, documentation-rules` | Sub-agents: `No`
+🤖 Active Agent: documentation-writer | Skills: clean-code, documentation-templates | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules, documentation-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

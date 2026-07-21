@@ -12,7 +12,7 @@ skills: clean-code, frontend-design, web-design-guidelines
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `html5-css-developer`** | Skills: `clean-code, frontend-design, web-design-guidelines` | Rules: `GEMINI, database-rules, deployment-rules, documentation-rules, performance-rules` | Sub-agents: `No`
+🤖 Active Agent: html5-css-developer | Skills: clean-code, frontend-design, web-design-guidelines | Rules: GEMINI.md, database-rules, deployment-rules, documentation-rules, performance-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

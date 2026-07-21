@@ -60,7 +60,7 @@ export function ChatMessageBubble({
                   <span className="h-2 w-2 rounded-full bg-cyan-400 animate-bounce" style={{ animationDelay: "150ms" }} />
                   <span className="h-2 w-2 rounded-full bg-cyan-400 animate-bounce" style={{ animationDelay: "300ms" }} />
                 </div>
-                <span className="text-[11px] text-gray-500 dark:text-zinc-400">Thinking...</span>
+                <span className="text-[11px] text-gray-500 dark:text-zinc-400">{agentName ? `${agentName} is typing...` : "Thinking..."}</span>
               </div>
             ) : msg.role === "assistant" ? (
               <div className="relative group/msg">

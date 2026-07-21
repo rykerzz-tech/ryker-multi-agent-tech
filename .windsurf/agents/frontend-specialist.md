@@ -12,7 +12,7 @@ skills: clean-code, nextjs-react-expert, web-design-guidelines, tailwind-pattern
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `frontend-specialist`** | Skills: `clean-code, nextjs-react-expert, web-design-guidelines +3 more` | Rules: `GEMINI, code-quality-rules, database-rules, documentation-rules, performance-rules` | Sub-agents: `No`
+🤖 Active Agent: frontend-specialist | Skills: clean-code, nextjs-react-expert, web-design-guidelines | Rules: GEMINI.md, code-quality-rules, database-rules, documentation-rules, performance-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

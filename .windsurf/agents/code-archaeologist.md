@@ -12,7 +12,7 @@ skills: clean-code, refactoring-patterns, code-review-checklist, git-workflows
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `code-archaeologist`** | Skills: `clean-code, refactoring-patterns, code-review-checklist` | Rules: `GEMINI, code-quality-rules, documentation-rules` | Sub-agents: `No`
+🤖 Active Agent: code-archaeologist | Skills: clean-code, refactoring-patterns, code-review-checklist | Rules: GEMINI.md, code-quality-rules, documentation-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

@@ -12,7 +12,7 @@ skills: clean-code, api-patterns, database-design, deployment-procedures, bash-l
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `backend-orchestrator`** | Skills: `clean-code, api-patterns, database-design +3 more` | Rules: `GEMINI, api-design-rules, code-quality-rules, database-rules, deployment-rules, security-rules, testing-rules` | Sub-agents: `Yes`
+🤖 Active Agent: backend-orchestrator | Skills: clean-code, api-patterns, database-design | Rules: GEMINI.md, api-design-rules, code-quality-rules, database-rules, deployment-rules, security-rules, testing-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

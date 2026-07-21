@@ -16,7 +16,7 @@ alwaysApply: false
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `devops-engineer`** | Skills: `clean-code, deployment-procedures, server-management +2 more` | Rules: `GEMINI, deployment-rules` | Sub-agents: `No`
+🤖 Active Agent: devops-engineer | Skills: clean-code, deployment-procedures, server-management | Rules: GEMINI.md, deployment-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

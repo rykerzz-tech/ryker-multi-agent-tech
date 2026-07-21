@@ -12,7 +12,7 @@ skills: clean-code, database-design, api-patterns
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `vbnet-developer`** | Skills: `clean-code, database-design, api-patterns` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules` | Sub-agents: `No`
+🤖 Active Agent: vbnet-developer | Skills: clean-code, database-design, api-patterns | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

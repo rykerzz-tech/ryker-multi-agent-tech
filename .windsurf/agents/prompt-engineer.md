@@ -12,7 +12,7 @@ skills: clean-code, architecture, brainstorming
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `prompt-engineer`** | Skills: `clean-code, architecture, brainstorming` | Rules: `GEMINI, database-rules, deployment-rules` | Sub-agents: `No`
+🤖 Active Agent: prompt-engineer | Skills: clean-code, architecture, brainstorming | Rules: GEMINI.md, database-rules, deployment-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

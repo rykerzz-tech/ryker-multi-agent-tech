@@ -12,7 +12,7 @@ skills: clean-code, delphi-pascal, database-design, api-patterns, dto-patterns
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `delphi-developer`** | Skills: `clean-code, delphi-pascal, database-design +2 more` | Rules: `GEMINI, api-design-rules, database-rules` | Sub-agents: `No`
+🤖 Active Agent: delphi-developer | Skills: clean-code, delphi-pascal, database-design | Rules: GEMINI.md, api-design-rules, database-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

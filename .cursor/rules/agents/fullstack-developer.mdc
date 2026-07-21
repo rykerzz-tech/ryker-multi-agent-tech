@@ -16,7 +16,7 @@ alwaysApply: false
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `fullstack-developer`** | Skills: `clean-code, api-patterns, database-design +4 more` | Rules: `GEMINI, api-design-rules, database-rules` | Sub-agents: `No`
+🤖 Active Agent: fullstack-developer | Skills: clean-code, api-patterns, database-design | Rules: GEMINI.md, api-design-rules, database-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

@@ -16,7 +16,7 @@ alwaysApply: false
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `project-planner`** | Skills: `clean-code, app-builder, plan-writing +7 more` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules, security-rules, testing-rules` | Sub-agents: `Yes`
+🤖 Active Agent: project-planner | Skills: clean-code, app-builder, plan-writing | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules, security-rules, testing-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

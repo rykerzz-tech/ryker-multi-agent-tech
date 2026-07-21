@@ -16,7 +16,7 @@ alwaysApply: false
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `senior-orchestrator`** | Skills: `clean-code, plan-writing, behavioral-modes +2 more` | Rules: `GEMINI, api-design-rules, code-quality-rules, database-rules, deployment-rules, performance-rules` | Sub-agents: `Yes`
+🤖 Active Agent: senior-orchestrator | Skills: clean-code, plan-writing, behavioral-modes | Rules: GEMINI.md, api-design-rules, code-quality-rules, database-rules, deployment-rules, performance-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

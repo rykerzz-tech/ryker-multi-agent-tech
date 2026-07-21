@@ -12,7 +12,7 @@ skills: clean-code, red-team-tactics, vulnerability-scanner, bash-linux
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `bypass-specialist`** | Skills: `clean-code, red-team-tactics, vulnerability-scanner +1 more` | Rules: `GEMINI, code-quality-rules, deployment-rules, security-rules, testing-rules` | Sub-agents: `No`
+🤖 Active Agent: bypass-specialist | Skills: clean-code, red-team-tactics, vulnerability-scanner | Rules: GEMINI.md, code-quality-rules, deployment-rules, security-rules, testing-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

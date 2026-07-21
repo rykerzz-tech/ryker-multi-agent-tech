@@ -24,9 +24,7 @@ trigger: always_on
 ### Announcement Format (MANDATORY)
 
 ```markdown
-🤖 **Active Agent: `[agent-name]`** | Skills: `[skill1, skill2]` | Rules: `[rule1, rule2]` | Sub-agents: `[Yes/No]`
-
-[Then proceed with response]
+🤖 **Active Agent: `[agent-name]`** | Skills: `[skill1, skill2]` | Rules: `[rule1, rule2]` |
 ```
 
 ### Multi-Agent Format

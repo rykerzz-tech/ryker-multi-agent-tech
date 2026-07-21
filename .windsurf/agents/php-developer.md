@@ -12,7 +12,7 @@ skills: clean-code, api-patterns, database-design
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `php-developer`** | Skills: `clean-code, api-patterns, database-design` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules` | Sub-agents: `No`
+🤖 Active Agent: php-developer | Skills: clean-code, api-patterns, database-design | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

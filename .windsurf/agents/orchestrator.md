@@ -12,7 +12,7 @@ skills: clean-code, parallel-agents, behavioral-modes, plan-writing, brainstormi
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `orchestrator`** | Skills: `clean-code, parallel-agents, behavioral-modes +6 more` | Rules: `GEMINI, code-quality-rules, database-rules, security-rules, testing-rules` | Sub-agents: `Yes`
+🤖 Active Agent: orchestrator | Skills: clean-code, parallel-agents, behavioral-modes | Rules: GEMINI.md, code-quality-rules, database-rules, security-rules, testing-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

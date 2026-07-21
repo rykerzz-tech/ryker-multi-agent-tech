@@ -12,7 +12,7 @@ skills: clean-code, nodejs-best-practices, api-patterns, database-design
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `express-developer`** | Skills: `clean-code, nodejs-best-practices, api-patterns +1 more` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules, performance-rules` | Sub-agents: `No`
+🤖 Active Agent: express-developer | Skills: clean-code, nodejs-best-practices, api-patterns | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules, performance-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

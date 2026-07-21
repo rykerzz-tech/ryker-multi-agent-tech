@@ -12,7 +12,7 @@ skills: clean-code, architecture, api-patterns, vulnerability-scanner
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `threat-modeler`** | Skills: `architecture, api-patterns, vulnerability-scanner` | Rules: `GEMINI, api-design-rules, security-rules` | Sub-agents: `No`
+🤖 Active Agent: threat-modeler | Skills: architecture, api-patterns, vulnerability-scanner | Rules: GEMINI.md, api-design-rules, security-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

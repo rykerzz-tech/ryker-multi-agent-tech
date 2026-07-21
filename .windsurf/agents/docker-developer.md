@@ -12,7 +12,7 @@ skills: clean-code, bash-linux, deployment-procedures, server-management, contai
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `docker-developer`** | Skills: `clean-code, bash-linux, deployment-procedures +1 more` | Rules: `GEMINI, deployment-rules, documentation-rules, security-rules` | Sub-agents: `No`
+🤖 Active Agent: docker-developer | Skills: clean-code, bash-linux, deployment-procedures | Rules: GEMINI.md, deployment-rules, documentation-rules, security-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

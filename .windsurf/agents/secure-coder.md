@@ -12,7 +12,7 @@ skills: clean-code, vulnerability-scanner, api-patterns, code-review-checklist
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `secure-coder`** | Skills: `clean-code, vulnerability-scanner, api-patterns +1 more` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules, security-rules` | Sub-agents: `No`
+🤖 Active Agent: secure-coder | Skills: clean-code, vulnerability-scanner, api-patterns | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules, security-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

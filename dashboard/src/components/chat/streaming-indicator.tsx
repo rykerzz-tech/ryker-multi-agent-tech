@@ -6,10 +6,11 @@ import { Activity } from "lucide-react";
 interface StreamingIndicatorProps {
   isStreaming: boolean;
   content?: string;
+  agentName?: string;
 }
 
 export const StreamingIndicator = memo(function StreamingIndicator({
-  isStreaming, content,
+  isStreaming, content, agentName,
 }: StreamingIndicatorProps) {
   if (!isStreaming) return null;
 
@@ -20,8 +21,8 @@ export const StreamingIndicator = memo(function StreamingIndicator({
       </div>
       <div className="flex-1 min-w-0">
         <div className="text-xs text-gray-500 dark:text-zinc-500 mb-1 flex items-center gap-1.5">
-          <span className="font-medium">Assistant</span>
-          <span className="text-[9px] px-1.5 py-0 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 animate-pulse">streaming</span>
+          <span className="font-medium">{agentName || "Agent"}</span>
+          <span className="text-[9px] px-1.5 py-0 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 animate-pulse">typing</span>
         </div>
         {content && (
           <div className="text-sm text-gray-800 dark:text-zinc-300 leading-relaxed whitespace-pre-wrap break-words">
@@ -36,7 +37,7 @@ export const StreamingIndicator = memo(function StreamingIndicator({
               <span className="w-1 h-1 rounded-full bg-blue-500 animate-bounce" style={{ animationDelay: "150ms" }} />
               <span className="w-1 h-1 rounded-full bg-blue-500 animate-bounce" style={{ animationDelay: "300ms" }} />
             </div>
-            <span>Thinking...</span>
+            <span>{agentName ? `${agentName} is typing...` : "Thinking..."}</span>
           </div>
         )}
       </div>

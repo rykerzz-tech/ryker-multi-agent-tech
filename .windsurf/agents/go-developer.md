@@ -12,7 +12,7 @@ skills: clean-code, architecture, api-patterns, bash-linux, systematic-debugging
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `go-developer`** | Skills: `clean-code, architecture, api-patterns +2 more` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules, performance-rules` | Sub-agents: `No`
+🤖 Active Agent: go-developer | Skills: clean-code, architecture, api-patterns | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules, performance-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

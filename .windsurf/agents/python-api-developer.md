@@ -12,7 +12,7 @@ skills: clean-code, python-patterns, api-patterns, database-design, dto-patterns
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `python-api-developer`** | Skills: `clean-code, python-patterns, api-patterns +2 more` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules, performance-rules` | Sub-agents: `No`
+🤖 Active Agent: python-api-developer | Skills: clean-code, python-patterns, api-patterns | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules, performance-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

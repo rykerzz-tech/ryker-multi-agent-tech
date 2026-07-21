@@ -12,7 +12,7 @@ skills: clean-code, frontend-design, web-design-guidelines
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `accessibility-specialist`** | Skills: `clean-code, frontend-design, web-design-guidelines` | Rules: `GEMINI, code-quality-rules, documentation-rules, testing-rules` | Sub-agents: `No`
+🤖 Active Agent: accessibility-specialist | Skills: clean-code, frontend-design, web-design-guidelines | Rules: GEMINI.md, code-quality-rules, documentation-rules, testing-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

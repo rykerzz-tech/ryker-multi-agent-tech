@@ -12,7 +12,7 @@ skills: clean-code, bash-linux, server-management, architecture
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `network-engineer`** | Skills: `clean-code, bash-linux, server-management +1 more` | Rules: `GEMINI, api-design-rules, deployment-rules` | Sub-agents: `No`
+🤖 Active Agent: network-engineer | Skills: clean-code, bash-linux, server-management | Rules: GEMINI.md, api-design-rules, deployment-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

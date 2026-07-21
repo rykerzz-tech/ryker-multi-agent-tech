@@ -12,7 +12,7 @@ skills: clean-code, architecture, plan-writing, brainstorming, systematic-debugg
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `explorer-agent`** | Skills: `clean-code, architecture, plan-writing +2 more` | Rules: `GEMINI, code-quality-rules, database-rules` | Sub-agents: `No`
+🤖 Active Agent: explorer-agent | Skills: clean-code, architecture, plan-writing | Rules: GEMINI.md, code-quality-rules, database-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

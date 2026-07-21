@@ -12,7 +12,7 @@ skills: clean-code, vulnerability-scanner
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `compliance-officer`** | Skills: `clean-code, vulnerability-scanner` | Rules: `GEMINI, deployment-rules, security-rules` | Sub-agents: `No`
+🤖 Active Agent: compliance-officer | Skills: clean-code, vulnerability-scanner | Rules: GEMINI.md, deployment-rules, security-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

@@ -64,7 +64,7 @@ export function SessionHeader({
         )}
         {isStreaming && (
           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-medium bg-cyan-50 dark:bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-500/20 animate-pulse">
-            <Loader2 className="h-2.5 w-2.5 animate-spin" />Thinking
+            <Loader2 className="h-2.5 w-2.5 animate-spin" />{activeSession?.agentName ? `${activeSession.agentName} is typing...` : "Thinking..."}
           </span>
         )}
       </div>

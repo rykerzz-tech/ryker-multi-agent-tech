@@ -12,7 +12,7 @@ skills: clean-code, python-patterns, database-design, api-patterns
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `data-scientist`** | Skills: `clean-code, python-patterns, database-design +1 more` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules` | Sub-agents: `No`
+🤖 Active Agent: data-scientist | Skills: clean-code, python-patterns, database-design | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

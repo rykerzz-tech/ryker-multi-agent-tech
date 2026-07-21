@@ -12,7 +12,7 @@ skills: clean-code, testing-patterns, tdd-workflow, webapp-testing, code-review-
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `test-engineer`** | Skills: `clean-code, testing-patterns, tdd-workflow +3 more` | Rules: `GEMINI, code-quality-rules, testing-rules` | Sub-agents: `No`
+🤖 Active Agent: test-engineer | Skills: clean-code, testing-patterns, tdd-workflow | Rules: GEMINI.md, code-quality-rules, testing-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

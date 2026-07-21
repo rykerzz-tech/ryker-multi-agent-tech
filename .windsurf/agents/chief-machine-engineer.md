@@ -12,7 +12,7 @@ skills: clean-code, architecture, plan-writing, brainstorming, api-patterns, dep
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `chief-machine-engineer`** | Skills: `clean-code, architecture, plan-writing +4 more` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules, security-rules` | Sub-agents: `No`
+🤖 Active Agent: chief-machine-engineer | Skills: clean-code, architecture, plan-writing | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules, security-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

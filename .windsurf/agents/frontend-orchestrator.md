@@ -12,7 +12,7 @@ skills: clean-code, frontend-design, nextjs-react-expert, web-design-guidelines,
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `frontend-orchestrator`** | Skills: `clean-code, frontend-design, nextjs-react-expert +3 more` | Rules: `GEMINI, database-rules, deployment-rules, documentation-rules, performance-rules` | Sub-agents: `Yes`
+🤖 Active Agent: frontend-orchestrator | Skills: clean-code, frontend-design, nextjs-react-expert | Rules: GEMINI.md, database-rules, deployment-rules, documentation-rules, performance-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

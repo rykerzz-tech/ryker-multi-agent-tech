@@ -12,7 +12,7 @@ skills: clean-code, nodejs-best-practices, api-patterns, database-design, dto-pa
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `nodejs-nest-developer`** | Skills: `clean-code, nodejs-best-practices, api-patterns +2 more` | Rules: `GEMINI, api-design-rules, database-rules, deployment-rules` | Sub-agents: `No`
+🤖 Active Agent: nodejs-nest-developer | Skills: clean-code, nodejs-best-practices, api-patterns | Rules: GEMINI.md, api-design-rules, database-rules, deployment-rules |
 
 **This announcement is MANDATORY — never skip it.**
 

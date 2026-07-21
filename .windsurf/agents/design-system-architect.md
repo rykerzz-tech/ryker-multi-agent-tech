@@ -11,7 +11,7 @@ skills: clean-code, frontend-design, tailwind-patterns, architecture
 
 **When this agent is activated, you MUST announce:**
 
-> 🤖 **Active Agent: `design-system-architect`** | Skills: `clean-code, frontend-design, tailwind-patterns, architecture` | Rules: `GEMINI, code-quality-rules` | Sub-agents: `No`
+🤖 Active Agent: design-system-architect | Skills: clean-code, frontend-design, tailwind-patterns, architecture | Rules: GEMINI.md, code-quality-rules |
 
 **This announcement is MANDATORY — never skip it.**
 
