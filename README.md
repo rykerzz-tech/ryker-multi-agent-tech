@@ -12,7 +12,8 @@
 <br>
 
 ```bash
-npx ryker-multi-agent-tech init
+# Run latest v2.8.0-nexus directly from GitHub
+npx github:rykerzz-tech/ryker-multi-agent-tech init
 ```
 
 </div>
@@ -81,13 +82,16 @@ graph TD
 ## 🚀 Quick Start & CLI Reference
 
 ```bash
-# Initialize interactive setup
+# Direct GitHub execution (Instant fetch of latest commit v2.8.0-nexus)
+npx github:rykerzz-tech/ryker-multi-agent-tech init
+
+# Standard package execution
 npx ryker-multi-agent-tech init
 
 # Start interactive multi-agent chat session
 ryker-multi-agent-tech chat
 
-# Execute task with full ELITE-NEXUS pipeline
+# Execute task with full ELITE-NEXUS v2 pipeline
 ryker-multi-agent-tech run "Build production auth service"
 
 # Run complete unit & integration test suite (138 tests)
