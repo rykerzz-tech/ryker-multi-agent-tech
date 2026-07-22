@@ -153,6 +153,7 @@ program
   .option("--max-steps <n>", "Max ReAct loop steps", "10")
   .option("--json", "Output as JSON")
   .option("--verbose", "Show step-by-step thinking and tool results")
+  .option("--trace", "Show full execution trace")
   .option("--dry-run", "Preview execution without running")
   .option("--no-cache", "Skip cache, always re-run")
   .option("--output-format <format>", "Output format: text, json, artifact")

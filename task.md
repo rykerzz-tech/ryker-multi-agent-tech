@@ -1,0 +1,16 @@
+- [x] Update `quality-gate.js` to support 5 states and split runtimes
+- [x] Refactor `lib/core/elite-nexus.js`
+  - [x] Implement `getActiveAgentDisplay`
+  - [x] Refactor `generateReport` with Smart Detail Level and compact Thai summary
+- [x] Refactor `lib/commands/run.js`
+  - [x] Replace initialization logs with compact active agent display
+  - [x] Simplify step listener (`onStep`) tool output
+  - [x] Use natural Thai spinner
+- [x] Refactor other CLI commands
+  - [x] Translate `lib/commands/inspect.js` to natural Thai
+  - [x] Translate `lib/commands/add.js` to natural Thai
+  - [x] Translate `lib/commands/remove.js` to natural Thai
+- [x] Verification and updates
+  - [x] Run unit tests to check for regression
+  - [x] Manually verify CLI output layout
+  - [x] Commit changes to Git
