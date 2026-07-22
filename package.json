@@ -1,10 +1,10 @@
 {
-  "name": "rykerzz-multi-agent",
+  "name": "ryker-multi-agent-tech",
   "version": "1.0.0",
   "description": "Ryker Multi-Agent Tech v1.0.0 — Enterprise Autonomous AI Agent Operating System (ELITE-NEXUS v2 Architecture)",
   "bin": {
-    "rykerzz-multi-agent": "./bin/cli.js",
     "ryker-multi-agent-tech": "./bin/cli.js",
+    "rykerzz-multi-agent": "./bin/cli.js",
     "ryker-multi-agent": "./bin/cli.js"
   },
   "scripts": {
