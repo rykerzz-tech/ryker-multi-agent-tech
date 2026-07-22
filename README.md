@@ -12,12 +12,12 @@
 <br>
 
 ```bash
-# Option 1: Run directly from GitHub without installing
-npx github:rykerzz-tech/ryker-multi-agent-tech init
+# Option 1: Run directly from npm without installing
+npx rykerzz-multi-agent init
 
-# Option 2: Install globally from GitHub
-npm install -g github:rykerzz-tech/ryker-multi-agent-tech
-ryker-multi-agent-tech init
+# Option 2: Install globally from npm
+npm install -g rykerzz-multi-agent
+rykerzz-multi-agent init
 ```
 
 </div>
@@ -102,17 +102,17 @@ graph TD
 ## 🚀 Quick Start & CLI Reference
 
 ```bash
-# 1. Run directly from GitHub (Recommended)
-npx github:rykerzz-tech/ryker-multi-agent-tech init
+# 1. Run directly from npm (Recommended)
+npx rykerzz-multi-agent init
 
-# 2. Or install globally from GitHub
-npm install -g github:rykerzz-tech/ryker-multi-agent-tech
+# 2. Or install globally from npm
+npm install -g rykerzz-multi-agent
 
 # 3. Start interactive multi-agent chat session
-ryker-multi-agent-tech chat
+rykerzz-multi-agent chat
 
 # 4. Execute task with full ELITE-NEXUS v2 pipeline
-ryker-multi-agent-tech run "Build production auth service"
+rykerzz-multi-agent run "Build production auth service"
 ```
 
 ---
