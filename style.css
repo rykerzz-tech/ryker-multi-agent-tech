@@ -808,6 +808,119 @@ p {
   color: var(--text-muted);
 }
 
+/* WORK EXPERIENCE STYLES */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-card {
+  border: 2px solid var(--border);
+  background-color: var(--card-bg);
+  padding: 24px;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.experience-card:hover {
+  border-color: var(--border-active);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px var(--shadow-color);
+}
+
+.experience-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.experience-company {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.experience-period {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.experience-position {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.experience-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Experience Editor in Sidebar */
+.experience-editor-item {
+  border: 1px solid var(--border);
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--input-bg);
+}
+
+.experience-editor-row {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+}
+
+.experience-editor-item input, .experience-editor-item textarea {
+  background-color: var(--bg);
+  border: 1px solid var(--input-border);
+  color: var(--text);
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.experience-editor-item textarea {
+  resize: vertical;
+}
+
+.experience-editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+}
+
+.experience-editor-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.btn-remove-experience {
+  background: transparent;
+  border: none;
+  color: #ff3333;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.btn-remove-experience:hover {
+  text-decoration: underline;
+}
+
 /* RESPONSIVE DESIGN (Mobile-first adaptions) */
 @media (max-width: 768px) {
   .app-header {

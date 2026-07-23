@@ -95,7 +95,8 @@ def run_tests(cmd: list, cwd: Path) -> dict:
             text=True,
             encoding='utf-8',
             errors='replace',
-            timeout=300  # 5 min timeout for tests
+            timeout=300,  # 5 min timeout for tests
+            shell=(sys.platform == 'win32')
         )
         
         result["output"] = proc.stdout[:3000] if proc.stdout else ""

@@ -15,6 +15,14 @@
     "Vulnerability Auditing Systems",
     "Distributed AI Frameworks"
   ],
+  "experience": [
+    {
+      "company": "Copeland (Thailand) Co., Ltd.",
+      "period": "2024 (1 Year)",
+      "position": "IT Support",
+      "description": "Managed corporate IT systems, supported infrastructure deployment, and resolved organizational technical issues and software bugs."
+    }
+  ],
   "custom_projects": [
     {
       "name": "ryker-multi-agent-tech",

@@ -41,7 +41,10 @@ const elements = {
   inputTitle: document.getElementById('input-title'),
   inputBio: document.getElementById('input-bio'),
   inputSkills: document.getElementById('input-skills'),
-  linksEditorContainer: document.getElementById('links-editor-container')
+  linksEditorContainer: document.getElementById('links-editor-container'),
+  addExperienceBtn: document.getElementById('add-experience-btn'),
+  experienceContainer: document.getElementById('display-experience'),
+  experienceEditorContainer: document.getElementById('experience-editor-container')
 };
 
 // Start System Time Updater
@@ -131,6 +134,26 @@ function renderProfileView() {
       span.textContent = skill.toUpperCase();
       elements.skillsContainer.appendChild(span);
     });
+  }
+  
+  // Render Experience
+  elements.experienceContainer.innerHTML = '';
+  if (currentProfile.experience && currentProfile.experience.length > 0) {
+    currentProfile.experience.forEach(exp => {
+      const card = document.createElement('div');
+      card.className = 'experience-card';
+      card.innerHTML = `
+        <div class="experience-card-header">
+          <span class="experience-company">${exp.company.toUpperCase()}</span>
+          <span class="experience-period">${exp.period.toUpperCase()}</span>
+        </div>
+        <div class="experience-position">${exp.position.toUpperCase()}</div>
+        <p class="experience-desc">${exp.description}</p>
+      `;
+      elements.experienceContainer.appendChild(card);
+    });
+  } else {
+    elements.experienceContainer.innerHTML = `<p class="experience-desc">// NO WORK EXPERIENCE REGISTERED</p>`;
   }
   
   // Combine custom projects and fetched GitHub repos for full project grid
@@ -285,6 +308,9 @@ function openControlPanel() {
   
   // Populates dynamic links list editor
   renderLinksEditor();
+  
+  // Populates dynamic experience list editor
+  renderExperienceEditor();
 }
 
 function closeControlPanel() {
@@ -321,6 +347,42 @@ function addLinkFieldToEditor(label = '', url = '', index = null) {
   elements.linksEditorContainer.appendChild(item);
 }
 
+// Dynamic Experience Editor Manager
+function renderExperienceEditor() {
+  elements.experienceEditorContainer.innerHTML = '';
+  const experience = currentProfile.experience || [];
+  
+  experience.forEach((exp, index) => {
+    addExperienceFieldToEditor(exp.company, exp.period, exp.position, exp.description, index);
+  });
+}
+
+function addExperienceFieldToEditor(company = '', period = '', position = '', description = '', index = null) {
+  const item = document.createElement('div');
+  item.className = 'experience-editor-item';
+  
+  const idSuffix = index !== null ? index : Date.now();
+  
+  item.innerHTML = `
+    <div class="experience-editor-header">
+      <span class="experience-editor-title">EXPERIENCE_ENTRY</span>
+      <button type="button" class="btn-remove-experience" aria-label="Remove experience entry">REMOVE</button>
+    </div>
+    <div class="experience-editor-row">
+      <input type="text" placeholder="Company" value="${company}" class="exp-company-input" id="exp-comp-${idSuffix}">
+      <input type="text" placeholder="Period (e.g. 2024)" value="${period}" class="exp-period-input" id="exp-per-${idSuffix}">
+    </div>
+    <input type="text" placeholder="Position (e.g. IT Support)" value="${position}" class="exp-position-input" id="exp-pos-${idSuffix}">
+    <textarea placeholder="Description of role..." rows="2" class="exp-desc-input" id="exp-desc-${idSuffix}">${description}</textarea>
+  `;
+  
+  item.querySelector('.btn-remove-experience').addEventListener('click', () => {
+    item.remove();
+  });
+  
+  elements.experienceEditorContainer.appendChild(item);
+}
+
 // Theme controls state updater
 function updateThemePickerState(theme) {
   document.querySelectorAll('.theme-btn').forEach(btn => {
@@ -355,6 +417,23 @@ function saveProfileSettings() {
     }
   });
   
+  // Gather experience
+  const newExperience = [];
+  document.querySelectorAll('.experience-editor-item').forEach(item => {
+    const companyVal = item.querySelector('.exp-company-input').value.trim();
+    const periodVal = item.querySelector('.exp-period-input').value.trim();
+    const positionVal = item.querySelector('.exp-position-input').value.trim();
+    const descVal = item.querySelector('.exp-desc-input').value.trim();
+    if (companyVal && periodVal && positionVal) {
+      newExperience.push({
+        company: companyVal,
+        period: periodVal,
+        position: positionVal,
+        description: descVal
+      });
+    }
+  });
+  
   // Detect active theme
   const activeThemeBtn = document.querySelector('.theme-btn.active');
   const activeTheme = activeThemeBtn ? activeThemeBtn.getAttribute('data-theme') : 'acid';
@@ -368,6 +447,7 @@ function saveProfileSettings() {
   currentProfile.bio = newBio;
   currentProfile.skills = newSkills;
   currentProfile.links = newLinks;
+  currentProfile.experience = newExperience;
   currentProfile.theme = activeTheme;
   
   // Save object configuration
@@ -412,6 +492,10 @@ function registerEventListeners() {
   
   elements.addLinkBtn.addEventListener('click', () => {
     addLinkFieldToEditor();
+  });
+  
+  elements.addExperienceBtn.addEventListener('click', () => {
+    addExperienceFieldToEditor();
   });
   
   // Theme option clicks
