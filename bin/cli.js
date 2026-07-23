@@ -5,6 +5,9 @@
  * AI Agent CLI — thin router, commands in lib/commands/
  */
 
+process.env.PYTHONIOENCODING = "utf-8";
+process.env.PYTHONUTF8 = "1";
+
 const { Command } = require("commander");
 const chalk = require("chalk");
 const logger = require("../lib/core/logger");
