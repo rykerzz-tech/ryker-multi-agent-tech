@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="acid">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryker Multi-Agent Tech — Portfolio</title>
+  <meta name="description" content="Dynamic developer portfolio showcasing AI agent architectures, security auditing systems, and open-source contributions. Built with Swiss Brutalist principles.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/rykerzz-tech">
+  <meta property="og:title" content="Ryker Multi-Agent Tech — Portfolio">
+  <meta property="og:description" content="Dynamic developer portfolio showcasing AI agent architectures, security auditing systems, and open-source contributions. Built with Swiss Brutalist principles.">
+  <meta property="og:image" content="https://github.com/rykerzz-tech.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://github.com/rykerzz-tech">
+  <meta property="twitter:title" content="Ryker Multi-Agent Tech — Portfolio">
+  <meta property="twitter:description" content="Dynamic developer portfolio showcasing AI agent architectures, security auditing systems, and open-source contributions. Built with Swiss Brutalist principles.">
+  <meta property="twitter:image" content="https://github.com/rykerzz-tech.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Grid Pattern -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="app-header">
+    <div class="header-logo">
+      <span class="logo-accent">RYKER</span>
+      <span class="logo-sub">// MULTI-AGENT</span>
+    </div>
+    <div class="header-actions">
+      <div class="api-status-indicator">
+        <span class="status-dot pulsing" id="api-status-dot"></span>
+        <span class="status-text" id="api-status-text">GITHUB CONNECTED</span>
+      </div>
+      <button class="btn btn-sharp btn-primary" id="open-control-panel" aria-label="Open profile editor dashboard">
+        <span>EDIT_PROFILE</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Layout Wrapper -->
+  <main class="main-layout">
+    
+    <!-- Hero / Profile Section (90/10 Asymmetric Layout) -->
+    <section class="hero-section" id="profile-hero">
+      <div class="hero-left">
+        <div class="profile-avatar-container">
+          <img src="https://github.com/rykerzz-tech.png" alt="Ryker Multi-Agent Tech Avatar" class="profile-avatar" id="display-avatar">
+          <div class="avatar-corner-accent" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-meta">
+          <span class="username-tag" id="display-username">@rykerzz-tech</span>
+          <span class="system-time" id="system-time">// LOCAL: 14:09:10</span>
+        </div>
+        <h1 class="display-title" id="display-name">Ryker Multi-Agent Tech</h1>
+        <h2 class="sub-headline" id="display-title">Next-Gen Multi-Agent Systems</h2>
+        <p class="profile-bio" id="display-bio">
+          Engineering self-orchestrating, secure, and collaborative AI agent networks for complex enterprise environment operations.
+        </p>
+        
+        <div class="profile-links-list" id="display-links">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Grid Panel -->
+    <section class="stats-panel" aria-label="GitHub Profile Statistics">
+      <div class="stat-card">
+        <span class="stat-label">REPOSITORIES</span>
+        <span class="stat-value" id="stat-repos">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">FOLLOWERS</span>
+        <span class="stat-value" id="stat-followers">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">STARS</span>
+        <span class="stat-value" id="stat-stars">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">SYSTEM_STATUS</span>
+        <span class="stat-value text-accent" id="stat-status">ACTIVE</span>
+      </div>
+    </section>
+
+    <!-- Core Skills / Technologies -->
+    <section class="skills-section" aria-label="Core Competencies">
+      <h3 class="section-title">CORE_CAPABILITIES</h3>
+      <div class="skills-grid" id="display-skills">
+        <!-- Populated by JavaScript -->
+      </div>
+    </section>
+
+    <!-- Dynamic Repositories / Projects Section -->
+    <section class="projects-section" aria-label="Projects Showcase">
+      <h3 class="section-title">PROJECT_DIRECTORY</h3>
+      <div class="projects-grid" id="projects-container">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sliding Profile Editor Control Center -->
+  <aside class="control-panel" id="control-panel-sidebar" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="control-panel-title">
+    <div class="control-panel-header">
+      <h2 id="control-panel-title">CONTROL_CENTER</h2>
+      <button class="btn btn-close" id="close-control-panel" aria-label="Close profile editor dashboard">
+        <span>[X] CLOSE</span>
+      </button>
+    </div>
+    
+    <div class="control-panel-body">
+      <!-- Section: Global Information -->
+      <fieldset class="control-fieldset">
+        <legend>PROFILE_METADATA</legend>
+        
+        <div class="form-group">
+          <label for="input-name">DISPLAY_NAME</label>
+          <input type="text" id="input-name" placeholder="Ryker Multi-Agent Tech">
+        </div>
+        
+        <div class="form-group">
+          <label for="input-username">GITHUB_USERNAME</label>
+          <input type="text" id="input-username" placeholder="rykerzz-tech">
+        </div>
+        
+        <div class="form-group">
+          <label for="input-title">SUB_HEADLINE</label>
+          <input type="text" id="input-title" placeholder="Next-Gen Multi-Agent Systems">
+        </div>
+        
+        <div class="form-group">
+          <label for="input-bio">BIO_DESCRIPTION</label>
+          <textarea id="input-bio" rows="4" placeholder="Describe the mission..."></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Section: Theme & Styles Selection -->
+      <fieldset class="control-fieldset">
+        <legend>INTERFACE_STYLING</legend>
+        <div class="theme-picker">
+          <button class="theme-btn theme-option-acid active" data-theme="acid" aria-label="Acid Green theme">
+            <span class="theme-preview" style="background:#0c0c0c; border:1px solid #39ff14;"></span>
+            <span class="theme-name">ACID_GREEN</span>
+          </button>
+          <button class="theme-btn theme-option-amber" data-theme="amber" aria-label="Cyber Amber theme">
+            <span class="theme-preview" style="background:#0c0c0c; border:1px solid #ffb000;"></span>
+            <span class="theme-name">AMBER_WAR</span>
+          </button>
+          <button class="theme-btn theme-option-crimson" data-theme="crimson" aria-label="Industrial Red theme">
+            <span class="theme-preview" style="background:#f5f5f5; border:1px solid #ff3333;"></span>
+            <span class="theme-name">CRIMSON_RAW</span>
+          </button>
+          <button class="theme-btn theme-option-monochrome" data-theme="monochrome" aria-label="High Contrast Monochrome theme">
+            <span class="theme-preview" style="background:#000000; border:1px solid #ffffff;"></span>
+            <span class="theme-name">MONOCHROME</span>
+          </button>
+        </div>
+      </fieldset>
+
+      <!-- Section: Capabilities Editor -->
+      <fieldset class="control-fieldset">
+        <legend>CORE_CAPABILITIES (COMMA-SEPARATED)</legend>
+        <div class="form-group">
+          <input type="text" id="input-skills" placeholder="Skill 1, Skill 2, Skill 3">
+        </div>
+      </fieldset>
+
+      <!-- Section: Custom Links Editor -->
+      <fieldset class="control-fieldset">
+        <legend>LINKS_AND_ENDPOINTS</legend>
+        <div id="links-editor-container">
+          <!-- Links fields will be appended here dynamically -->
+        </div>
+        <button type="button" class="btn btn-sharp btn-outline btn-full" id="add-link-btn">
+          <span>+ ADD_NEW_LINK</span>
+        </button>
+      </fieldset>
+    </div>
+
+    <!-- Actions Footer -->
+    <div class="control-panel-footer">
+      <button class="btn btn-sharp btn-primary btn-full" id="save-profile-btn">
+        <span>SAVE_CHANGES_TO_LOCAL</span>
+      </button>
+      <div class="footer-btn-group">
+        <button class="btn btn-sharp btn-outline" id="export-config-btn" title="Export updated profile.json file">
+          <span>EXPORT_CONFIG</span>
+        </button>
+        <button class="btn btn-sharp btn-danger" id="reset-profile-btn" title="Reset all custom settings">
+          <span>FACTORY_RESET</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Footer Info -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <p class="footer-mono">// TERMINAL CONNECTED VIA RYKER OS // ALL CHANNELS ENCRYPTED</p>
+      <p class="footer-mono">2026 RYKERZZ-TECH. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <!-- Script Initialization -->
+  <script src="app.js"></script>
+</body>
+</html>
